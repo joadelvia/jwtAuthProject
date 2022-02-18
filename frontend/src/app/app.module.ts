@@ -12,15 +12,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { AdminComponent } from './admin';
-import { LoginComponent } from './login';
+import { LoginComponent } from './login';;
+import { SharedModule } from './shared/shared.module'
 
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        AppRoutingModule
-    ],
+        AppRoutingModule,
+        SharedModule    ],
     declarations: [
         AppComponent,
         HomeComponent,
